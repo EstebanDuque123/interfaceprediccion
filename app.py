@@ -29,17 +29,6 @@ if st.button("Predecir"):
         st.error("Error en la predicción. Por favor, verifica los datos de entrada.")
 
 # # Para ejecutar la aplicación Streamlit
-# if __name__ == "__main__":
-#     import os
-#     os.system("streamlit run app.py")
-def is_port_in_use(port):
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        return s.connect_ex(('localhost', port)) == 0
-
-# Para ejecutar la aplicación Streamlit
-if __name__ == "__main__":
-    port = 8501  # Puerto por defecto de Streamlit
-    if not is_port_in_use(port):
-        os.system("streamlit run app.py")
-    else:
-        print(f"El puerto {port} ya está en uso.")
+ if __name__ == "__main__":
+     import os
+     os.system("streamlit run app.py")
