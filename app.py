@@ -29,6 +29,6 @@ if st.button("Predecir"):
         st.error("Error en la predicción. Por favor, verifica los datos de entrada.")
 
 # # Para ejecutar la aplicación Streamlit
- if __name__ == "__main__":
+if __name__ == "__main__":
      import os
      os.system("streamlit run app.py")
